@@ -17,7 +17,7 @@
                         {t}Normal Fees : 1.0%{/t}
                     </li>
                     <li style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;">
-                        {t}<a href="https://join.slack.com/t/poolium/shared_invite/MjM1MjQxNjQ1NDc1LTE1MDQzMDA2NDQtMjQwNWQ3MGIwZg"> Slack </a> {/t}
+                        {t escape=no server_url}Come chat with us on <a href="https://join.slack.com/t/poolium/shared_invite/MjM1MjQxNjQ1NDc1LTE1MDQzMDA2NDQtMjQwNWQ3MGIwZg">Slack</a>{/t}
                     </li>
                     <li style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;">
                         {t}Auto Payout Option: 1 - 20 VRM (default 10){/t}
