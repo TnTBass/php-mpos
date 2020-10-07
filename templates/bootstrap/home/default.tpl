@@ -72,7 +72,6 @@
                     <td style="padding: 10px;">3333</td>
                     <td style="padding: 10px;">0.05</td>
                 </tr>
-                </tr>
                 <tr style="border: 1px #bce8f1 solid;">
                     <td style="padding: 10px;">4000 -&gt; &infin; H/m</td>
                     <td style="padding: 10px;">{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3334"}</td>
