@@ -9,9 +9,6 @@
             <div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;">
                 {t escape=no server_url=$smarty.server.SCRIPT_NAME}To join the pool you can follow the <a href="%1?page=gettingstarted">Getting Started Guide</a>.{/t}
             </div>
-            <div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;">
-                {t}Come chat with us on <a href="https://join.slack.com/t/poolium/shared_invite/MjM1MjQxNjQ1NDc1LTE1MDQzMDA2NDQtMjQwNWQ3MGIwZg">Slack</a>{/t}
-            </div>
             <div style="margin-top: 15px; font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal;">
                 <span style="font-weight: bold;">{t}Pool Features :{/t}</span>
                 <br />
@@ -79,7 +76,7 @@
                     <td style="padding: 10px;">0.2</td>
                 </tr>
             </table>
-            <div style="margin-top: 15px;font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;">{t}Regards{/t},<br />Atomics</div>
+            <div style="margin-top: 15px;font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;">{t}Regards{/t},<br />Trinitrotoluene</div>
       </div>
     </div>
   </div>
