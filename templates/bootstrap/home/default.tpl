@@ -2,7 +2,7 @@
   <div class="col-lg-12">
     <div class="panel panel-info">
       <div class="panel-heading">
-        <i class="fa fa-bookmark"></i> {t}Welcome to VRM - Mining-Pool{/t}
+        <i class="fa fa-bookmark"></i> {t}Welcome to Poolium, one of the oldest VRM Mining Pools{/t}
       </div>
       <div class="panel-body">
           <p>
@@ -14,14 +14,23 @@
                 <br />
                 <ul>
                     <li style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;">
-                        {t}Normal Fees : 1.9%{/t}({t}1% are given to a vericonomy fund to help exchange registration, development, ...{/t})
+                        {t}Normal Fees : 1.0%{/t}
                     </li>
                     <li style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;">
-                        {t}Fully Redundant Infrastructure{/t}
+                        {t}<a href="https://join.slack.com/t/poolium/shared_invite/MjM1MjQxNjQ1NDc1LTE1MDQzMDA2NDQtMjQwNWQ3MGIwZg"> Slack </a> {/t}
                     </li>
                     <li style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;">
-                        {t}Servers in professional Datacenter in Europe, North America and Asia{/t}
+                        {t}Auto Payout Option: 1 - 20 VRM (default 10){/t}
                     </li>
+                    <li style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;">
+                        {t}Manual Payout: 5 VRM{/t}
+                    </li>
+                    <li style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;">
+                        {t}Small bonus if you find the block{/t}
+                    </li>                    
+                    <li style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;">
+                        {t}Multiple difficulty ports {/t}
+                    </li>                                
                 </ul>
             </div>
             <div style="margin-top: 15px; font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal;">
@@ -35,21 +44,9 @@
                     <th style="padding: 10px;">{t}Status{/t}</th>
                 </tr>
                 <tr style="border: 1px #bce8f1 solid;">
-                    <td style="padding: 10px;">{t}North America - USA - Virginia{/t}</td>
+                    <td style="padding: 10px;">{t}North America - Canada - Alberta{/t}</td>
                     <td style="padding: 10px;">{t}1Gbps - DDos Protection{/t}</td>
-                    <td style="padding: 10px;">stratum+tcp://us.vrm.mining-pool.ovh:PORT</td>
-                    <td style="padding: 10px;">{t}UP{/t}</td>
-                </tr>
-                <tr style="border: 1px #bce8f1 solid;">
-                    <td style="padding: 10px;">{t}Europe - France - Strasbourg{/t}</td>
-                    <td style="padding: 10px;">{t}10Gbps - DDos Protection{/t}</td>
-                    <td style="padding: 10px;">stratum+tcp://eu.vrm.mining-pool.ovh:PORT</td>
-                    <td style="padding: 10px;">{t}UP{/t}</td>
-                </tr>
-                <tr style="border: 1px #bce8f1 solid;">
-                    <td style="padding: 10px;">{t}Asia - Singapore{/t}</td>
-                    <td style="padding: 10px;">{t}1Gbps - DDos Protection{/t}</td>
-                    <td style="padding: 10px;">stratum+tcp://sgp.vrm.mining-pool.ovh:PORT</td>
+                    <td style="padding: 10px;">{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"}</td>
                     <td style="padding: 10px;">{t}UP{/t}</td>
                 </tr>
             </table>
@@ -64,40 +61,23 @@
                     <th style="padding: 10px;">{t}Difficulty{/t}</th>
                 </tr>
                 <tr style="border: 1px #bce8f1 solid;">
-                    <td style="padding: 10px;">0 -&gt; 2000 H/m</td>
-                    <td style="padding: 10px;">stratum+tcp://eu.vrm.mining-pool.ovh:3032</td>
-                    <td style="padding: 10px;">3032</td>
-                    <td style="padding: 10px;">0.0007 {t}to{/t} 0.04</td>
-                </tr>
-                <tr style="border: 1px #bce8f1 solid;">
-                    <td style="padding: 10px;">2000 -&gt; 2500 H/m</td>
-                    <td style="padding: 10px;">stratum+tcp://eu.vrm.mining-pool.ovh:3033</td>
-                    <td style="padding: 10px;">3033</td>
+                    <td style="padding: 10px;">0 -&gt; 1000 H/m</td>
+                    <td style="padding: 10px;">{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"}</td>
+                    <td style="padding: 10px;">3332</td>
                     <td style="padding: 10px;">0.05</td>
                 </tr>
                 <tr style="border: 1px #bce8f1 solid;">
-                    <td style="padding: 10px;">2500 -&gt; 5500 H/m</td>
-                    <td style="padding: 10px;">stratum+tcp://eu.vrm.mining-pool.ovh:3034</td>
-                    <td style="padding: 10px;">3034</td>
-                    <td style="padding: 10px;">0.1</td>
+                    <td style="padding: 10px;">1000 -&gt; 4000 H/m</td>
+                    <td style="padding: 10px;">{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"}</td>
+                    <td style="padding: 10px;">3333</td>
+                    <td style="padding: 10px;">0.05</td>
+                </tr>
                 </tr>
                 <tr style="border: 1px #bce8f1 solid;">
-                    <td style="padding: 10px;">5500 -&gt; 11000 H/m</td>
-                    <td style="padding: 10px;">stratum+tcp://eu.vrm.mining-pool.ovh:3035</td>
-                    <td style="padding: 10px;">3035</td>
+                    <td style="padding: 10px;">4000 -&gt; &infin; H/m</td>
+                    <td style="padding: 10px;">{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3334"}</td>
+                    <td style="padding: 10px;">3334</td>
                     <td style="padding: 10px;">0.2</td>
-                </tr>
-                <tr style="border: 1px #bce8f1 solid;">
-                    <td style="padding: 10px;">11000 -&gt; &infin; H/m</td>
-                    <td style="padding: 10px;">stratum+tcp://eu.vrm.mining-pool.ovh:3036</td>
-                    <td style="padding: 10px;">3036</td>
-                    <td style="padding: 10px;">0.3</td>
-                </tr>
-                <tr style="border: 1px #bce8f1 solid;">
-                    <td style="padding: 10px;">{t}Special SBC{/t}</td>
-                    <td style="padding: 10px;">stratum+tcp://eu.vrm.mining-pool.ovh:3037 ({t}Europe Only{/t})</td>
-                    <td style="padding: 10px;">3037</td>
-                    <td style="padding: 10px;">0.002 {t}to{/t} 0.006</td>
                 </tr>
             </table>
             <div style="margin-top: 15px;font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;">{t}Regards{/t},<br />Atomics</div>
