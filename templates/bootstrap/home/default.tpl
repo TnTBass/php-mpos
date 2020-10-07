@@ -7,7 +7,10 @@
       <div class="panel-body">
           <p>
             <div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;">
-		{t escape=no server_url=$smarty.server.SCRIPT_NAME}To join the pool you can follow the <a href="%1?page=gettingstarted">Getting Started Guide</a>.{/t}
+                {t escape=no server_url=$smarty.server.SCRIPT_NAME}To join the pool you can follow the <a href="%1?page=gettingstarted">Getting Started Guide</a>.{/t}
+            </div>
+            <div style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;">
+                {t}Come chat with us on <a href="https://join.slack.com/t/poolium/shared_invite/MjM1MjQxNjQ1NDc1LTE1MDQzMDA2NDQtMjQwNWQ3MGIwZg">Slack</a>{/t}
             </div>
             <div style="margin-top: 15px; font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal;">
                 <span style="font-weight: bold;">{t}Pool Features :{/t}</span>
@@ -15,9 +18,6 @@
                 <ul>
                     <li style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;">
                         {t}Normal Fees : 1.0%{/t}
-                    </li>
-                    <li style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;">
-                        {t}Come chat with us on <a href="https://join.slack.com/t/poolium/shared_invite/MjM1MjQxNjQ1NDc1LTE1MDQzMDA2NDQtMjQwNWQ3MGIwZg">Slack</a>{/t}
                     </li>
                     <li style="font-family: Arial, Verdana; font-size: 10pt; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;">
                         {t}Auto Payout Option: 1 - 20 VRM (default 10){/t}
@@ -62,7 +62,7 @@
                 </tr>
                 <tr style="border: 1px #bce8f1 solid;">
                     <td style="padding: 10px;">0 -&gt; 1000 H/m</td>
-                    <td style="padding: 10px;">{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"}</td>
+                    <td style="padding: 10px;">{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3332"}</td>
                     <td style="padding: 10px;">3332</td>
                     <td style="padding: 10px;">0.05</td>
                 </tr>
