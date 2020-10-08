@@ -57,7 +57,7 @@
     <div class="col-lg-12">
       <div class="panel panel-info">
         <div class="panel-heading">
-          <i class="fa fa-question fa-fw"></i> {t}Choose the best Stratum{/t}
+          <i class="fa fa-question fa-fw"></i> {t}Choose the Stratum{/t}
         </div>
         <div class="panel-body">
             {t}Mining-Pool is opening stratum servers around the world to be next to every miner.{/t}
@@ -90,7 +90,7 @@
     <div class="col-lg-12">
       <div class="panel panel-info">
         <div class="panel-heading">
-          <i class="fa fa-question fa-fw"></i> {t}Choose the best Port{/t}
+          <i class="fa fa-question fa-fw"></i> {t}Choose the best port{/t}
         </div>
         <div class="panel-body">
             {t}To improve your gain performance, It's better to choose well the best mining port depending on your hashrate.{/t}
@@ -109,40 +109,22 @@
                     <th style="padding: 10px;">{t}Difficulty{/t}</th>
                 </tr>
                 <tr style="border: 1px #bce8f1 solid;">
-                    <td style="padding: 10px;">0 -&gt; 2000 H/m</th>
-                    <td style="padding: 10px;">stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:3032</th>
-                    <td style="padding: 10px;">3032</th>
-                    <td style="padding: 10px;">0.0007 {t}to{/t} 0.04</th>
+                    <td style="padding: 10px;">0 -&gt; 1000 H/m</td>
+                    <td style="padding: 10px;">stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3332"}</td>
+                    <td style="padding: 10px;">3332</td>
+                    <td style="padding: 10px;">0.005</td>
                 </tr>
                 <tr style="border: 1px #bce8f1 solid;">
-                    <td style="padding: 10px;">2000 -&gt; 2500 H/m</th>
-                    <td style="padding: 10px;">stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:3033</th>
-                    <td style="padding: 10px;">3033</th>
-                    <td style="padding: 10px;">0.05</th>
+                    <td style="padding: 10px;">1000 -&gt; 4000 H/m</td>
+                    <td style="padding: 10px;">{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"}</td>
+                    <td style="padding: 10px;">3333</td>
+                    <td style="padding: 10px;">0.05</td>
                 </tr>
                 <tr style="border: 1px #bce8f1 solid;">
-                    <td style="padding: 10px;">2500 -&gt; 5500 H/m</th>
-                    <td style="padding: 10px;">stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:3034</th>
-                    <td style="padding: 10px;">3034</th>
-                    <td style="padding: 10px;">0.1</th>
-                </tr>
-                <tr style="border: 1px #bce8f1 solid;">
-                    <td style="padding: 10px;">5500 -&gt; 11000 H/m</th>
-                    <td style="padding: 10px;">stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:3035</th>
-                    <td style="padding: 10px;">3035</th>
-                    <td style="padding: 10px;">0.2</th>
-                </tr>
-                <tr style="border: 1px #bce8f1 solid;">
-                    <td style="padding: 10px;">11000 -&gt; &infin; H/m</th>
-                    <td style="padding: 10px;">stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:3036</th>
-                    <td style="padding: 10px;">3036</th>
-                    <td style="padding: 10px;">0.3</th>
-                </tr>
-                <tr style="border: 1px #bce8f1 solid;">
-                    <td style="padding: 10px;">{t}Special SBC{/t}</td>
-                    <td style="padding: 10px;">stratum+tcp://eu.vrm.mining-pool.ovh:3037 ({t}Europe Only{/t})</th>
-                    <td style="padding: 10px;">3037</td>
-                    <td style="padding: 10px;">0.002 {t}to{/t} 0.006</td>
+                    <td style="padding: 10px;">4000 -&gt; &infin; H/m</td>
+                    <td style="padding: 10px;">{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3334"}</td>
+                    <td style="padding: 10px;">3334</td>
+                    <td style="padding: 10px;">0.2</td>
                 </tr>
             </table>
         </div>
