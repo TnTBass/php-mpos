@@ -59,7 +59,7 @@
                 </tr>
                 <tr style="border: 1px #bce8f1 solid;">
                     <td style="padding: 10px;">0 -&gt; 1000 H/m</td>
-                    <td style="padding: 10px;">stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}</td>
+                    <td style="padding: 10px;">stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3332"}</td>
                     <td style="padding: 10px;">3332</td>
                     <td style="padding: 10px;">0.05</td>
                 </tr>
