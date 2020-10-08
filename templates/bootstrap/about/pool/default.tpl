@@ -7,8 +7,9 @@
         <div class="panel-body">
           <ul>
           <li>
-          <b><i>{t}Q: How can I reach you if I have questions?</b></i></li>
-          &nbsp;{t escape=no}<b>A:</b> Come chat with us on <a href="https://join.slack.com/t/poolium/shared_invite/MjM1MjQxNjQ1NDc1LTE1MDQzMDA2NDQtMjQwNWQ3MGIwZg" target="_blank">Slack</a>.
+            <b><i>{t}Q: How can I reach you if I have questions?{/t}</b></i>
+          </li>
+          &nbsp;{t escape=no}<b>A:</b> Come chat with us on <a href="https://join.slack.com/t/poolium/shared_invite/MjM1MjQxNjQ1NDc1LTE1MDQzMDA2NDQtMjQwNWQ3MGIwZg" target="_blank">Slack</a>
           <br><br>
           <b><i>{t}Q: When will I get paid?{/t}</b></i></li>
           &nbsp;{t escape=no}<b>A:</b> This pool uses the following payout system.{/t}<br>
