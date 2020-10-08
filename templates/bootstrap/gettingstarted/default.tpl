@@ -77,19 +77,7 @@
                 <tr style="border: 1px #bce8f1 solid;">
                     <td style="padding: 10px;">{t}Nortd America - USA - Virginia{/t}</td>
                     <td style="padding: 10px;">{t}1Gbps - DDos Protection{/t}</td>
-                    <td style="padding: 10px;">stratum+tcp://us.vrm.mining-pool.ovh:PORT</td>
-                    <td style="padding: 10px;color: green; font-weight: bold;">{t}UP{/t}</td>
-                </tr>
-                <tr style="border: 1px #bce8f1 solid;">
-                    <td style="padding: 10px;">{t}Europe - France - Strasbourg{/t}</td>
-                    <td style="padding: 10px;">{t}10Gbps - DDos Protection{/t}</td>
-                    <td style="padding: 10px;">stratum+tcp://eu.vrm.mining-pool.ovh:PORT</td>
-                    <td style="padding: 10px;color: green; font-weight: bold;">{t}UP{/t}</td>
-                </tr>
-                <tr style="border: 1px #bce8f1 solid;">
-                    <td style="padding: 10px;">{t}Asia - Singapore{/t}</td>
-                    <td style="padding: 10px;">{t}1Gbps - DDos Protection{/t}</td>
-                    <td style="padding: 10px;">stratum+tcp://sgp.vrm.mining-pool.ovh:PORT</td>
+                    <td style="padding: 10px;">stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:PORT</td>
                     <td style="padding: 10px;color: green; font-weight: bold;">{t}UP{/t}</td>
                 </tr>
             </table>
