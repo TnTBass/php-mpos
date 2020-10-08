@@ -110,19 +110,19 @@
                 </tr>
                 <tr style="border: 1px #bce8f1 solid;">
                     <td style="padding: 10px;">0 -&gt; 1000 H/m</td>
-                    <td style="padding: 10px;">stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3332"}</td>
+                    <td style="padding: 10px;">stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:3332</td>
                     <td style="padding: 10px;">3332</td>
                     <td style="padding: 10px;">0.005</td>
                 </tr>
                 <tr style="border: 1px #bce8f1 solid;">
                     <td style="padding: 10px;">1000 -&gt; 4000 H/m</td>
-                    <td style="padding: 10px;">stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"}</td>
+                    <td style="padding: 10px;">stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:3333</td>
                     <td style="padding: 10px;">3333</td>
                     <td style="padding: 10px;">0.05</td>
                 </tr>
                 <tr style="border: 1px #bce8f1 solid;">
                     <td style="padding: 10px;">4000 -&gt; &infin; H/m</td>
-                    <td style="padding: 10px;">stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3334"}</td>
+                    <td style="padding: 10px;">stratum+tcp://{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:3334</td>
                     <td style="padding: 10px;">3334</td>
                     <td style="padding: 10px;">0.2</td>
                 </tr>
