@@ -11,7 +11,9 @@
           </li>
           &nbsp;{t escape=no}<b>A:</b> Come chat with us on <a href="https://join.slack.com/t/poolium/shared_invite/MjM1MjQxNjQ1NDc1LTE1MDQzMDA2NDQtMjQwNWQ3MGIwZg" target="_blank">Slack</a>{/t}
           <br><br>
-          <b><i>{t}Q: When will I get paid?{/t}</b></i></li>
+          <li>
+            <b><i>{t}Q: When will I get paid?{/t}</b></i>
+          </li>
           <br>
           &nbsp;{t escape=no}<b>A:</b> This pool uses the following payout system.{/t}<br>
           {if $GLOBAL.config.payout_system == 'prop'}
