@@ -43,7 +43,7 @@
                 <tr style="border: 1px #bce8f1 solid;">
                     <td style="padding: 10px;">{t}North America - Canada - Alberta{/t}</td>
                     <td style="padding: 10px;">{t}1Gbps - DDos Protection{/t}</td>
-                    <td style="padding: 10px;">{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"}</td>
+                    <td style="padding: 10px;">stratum+tcp://vrm.poolium.win:3333</td>
                     <td style="padding: 10px;">{t}UP{/t}</td>
                 </tr>
             </table>
@@ -59,19 +59,19 @@
                 </tr>
                 <tr style="border: 1px #bce8f1 solid;">
                     <td style="padding: 10px;">0 -&gt; 1000 H/m</td>
-                    <td style="padding: 10px;">stratum+tcp://{$SITESTRATUMURL}:{$SITESTRATUMPORT|default:"3332"}</td>
+                    <td style="padding: 10px;">stratum+tcp://vrm.poolium.win:3332</td>
                     <td style="padding: 10px;">3332</td>
                     <td style="padding: 10px;">0.005</td>
                 </tr>
                 <tr style="border: 1px #bce8f1 solid;">
                     <td style="padding: 10px;">1000 -&gt; 4000 H/m</td>
-                    <td style="padding: 10px;">{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3333"}</td>
+                    <td style="padding: 10px;">stratum+tcp://vrm.poolium.win:3333</td>
                     <td style="padding: 10px;">3333</td>
                     <td style="padding: 10px;">0.05</td>
                 </tr>
                 <tr style="border: 1px #bce8f1 solid;">
                     <td style="padding: 10px;">4000 -&gt; &infin; H/m</td>
-                    <td style="padding: 10px;">{$SITESTRATUMURL|default:$smarty.server.SERVER_NAME}:{$SITESTRATUMPORT|default:"3334"}</td>
+                    <td style="padding: 10px;">stratum+tcp://vrm.poolium.win:3334</td>
                     <td style="padding: 10px;">3334</td>
                     <td style="padding: 10px;">0.2</td>
                 </tr>
