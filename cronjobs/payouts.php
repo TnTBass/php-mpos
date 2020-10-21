@@ -131,7 +131,7 @@ if ($setting->getValue('disable_manual_payouts') != 1 && $aManualPayouts) {
         }
       } else {
         // We don't run sendtoaddress but run sendmany later
-        $aSendMany[$aUserData['coin_address']] = $aUserData['confirmed'] - $txfee_manual;
+        $aSendMany[$aUserData['coin_address']] = number_format($aUserData['confirmed'] - $txfee_manual, 7, '.', '');
         $aTransactions[] = $transaction_id;
       }
     } else {
@@ -242,7 +242,7 @@ if ($setting->getValue('disable_auto_payouts') != 1 && $aAutoPayouts) {
         }
       } else {
         // We don't run sendtoaddress but run sendmany later
-        $aSendMany[$aUserData['coin_address']] = $aUserData['confirmed'] - $txfee_auto;
+        $aSendMany[$aUserData['coin_address']] = number_format($aUserData['confirmed'] - $txfee_auto, 7, '.', '');
         $aTransactions[] = $transaction_id;
       }
     } else {
